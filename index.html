@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rawa Dara | Software Engineer</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Font Awesome (for icons) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo">Rawa<span>Dara</span></a>
+
+          <input type="checkbox" id="hamburger" class="hamburger-checkbox" />
+          <label for="hamburger" class="hamburger">
+            <div class="hamburger-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </label>
+
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Hello, I'm Rawa Dara</h1>
+            <h2>Software Engineer Student</h2>
+            <p>
+              I build modern web applications using Next.js, React, and Prisma
+              with a focus on clean code and exceptional user experiences.
+            </p>
+
+            <div class="tech-stack">
+              <span class="tech-item">Next.js</span>
+              <span class="tech-item">React</span>
+              <span class="tech-item">Prisma</span>
+              <span class="tech-item">Tailwind CSS</span>
+              <span class="tech-item">JavaScript</span>
+              <span class="tech-item">TypeScript</span>
+              <span class="tech-item">HTML</span>
+              <span class="tech-item">CSS</span>
+            </div>
+
+            <a href="projects.html" class="btn">View My Projects</a>
+            <a href="contact.html" class="btn btn-outline">Get In Touch</a>
+          </div>
+          <div class="hero-image">
+            <img src="assets/images/hero.svg" alt="Hero Illustration" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section">
+      <div class="container">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-react"></i>
+            </div>
+            <h3 class="skill-name">React</h3>
+            <p>Building interactive UIs with React components</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-js"></i>
+            </div>
+            <h3 class="skill-name">JavaScript</h3>
+            <p>Modern ES6+ JavaScript development</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-node-js"></i>
+            </div>
+            <h3 class="skill-name">Next.js</h3>
+            <p>Server-side rendering and static site generation</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3 class="skill-name">Prisma</h3>
+            <p>Type-safe database access with Prisma ORM</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-css3-alt"></i>
+            </div>
+            <h3 class="skill-name">Tailwind CSS</h3>
+            <p>Utility-first CSS framework</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-html5"></i>
+            </div>
+            <h3 class="skill-name">HTML/CSS</h3>
+            <p>Responsive layouts and modern CSS features</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="section" style="background-color: var(--bg-alt)">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="assets/images/project1.png"
+                alt="Multi-Branch CSV Transaction Processor"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">
+                Multi-Branch CSV Transaction Processor
+              </h3>
+              <p class="project-description">
+                A custom-built financial tool for Beyza Mobilya that processes
+                monthly FIB bank income transactions from CSV files and
+                generates comprehensive PDF reports.
+              </p>
+              <div class="project-technologies">
+                <span class="project-technology">Next.js</span>
+                <span class="project-technology">React</span>
+                <span class="project-technology">Tailwind CSS</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://beyzafib.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                  >View Live</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="assets/images/project2.png"
+                alt="Beyza Mobilya Website"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Beyza Mobilya Website</h3>
+              <p class="project-description">
+                Complete corporate website for Beyza Mobilya featuring their
+                product catalog, company information, and contact details with a
+                modern responsive design.
+              </p>
+              <div class="project-technologies">
+                <span class="project-technology">Next.js</span>
+                <span class="project-technology">React</span>
+                <span class="project-technology">Tailwind CSS</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://beyzamobilya.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                  >View Live</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="assets/images/project3.png"
+                alt="Student Discounts Portal"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">QIU Student Discounts Portal</h3>
+              <p class="project-description">
+                A platform for Qaiwan International University students to
+                discover and access exclusive student discounts at local
+                businesses and services.
+              </p>
+              <div class="project-technologies">
+                <span class="project-technology">Next.js</span>
+                <span class="project-technology">Prisma</span>
+                <span class="project-technology">React</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://studentcouncil.academy/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                  >View Live</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: var(--space-md)">
+          <a href="projects.html" class="btn">View All Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p class="footer-text">&copy; 2025 Rawa Dara. All rights reserved.</p>
+          <a href="#" class="back-to-top">
+            <i class="fas fa-arrow-up"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
