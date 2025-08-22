@@ -12,6 +12,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!-- Preload hero image for faster loading -->
+    <link rel="preload" href="assets/images/hero.svg" as="image" />
   </head>
   <body>
     <!-- Header -->
@@ -68,9 +70,11 @@
             <img
               src="assets/images/hero.svg"
               alt="Hero Illustration"
-              decoding="async"
               width="500"
               height="500"
+              loading="eager"
+              fetchpriority="high"
+              decoding="async"
             />
           </div>
         </div>
@@ -87,7 +91,6 @@
               <i class="fab fa-react"></i>
             </div>
             <h3 class="skill-name">React</h3>
-            <p>Building interactive UIs with React components</p>
           </div>
 
           <div class="skill-card">
@@ -95,7 +98,6 @@
               <i class="fab fa-js"></i>
             </div>
             <h3 class="skill-name">JavaScript</h3>
-            <p>Modern ES6+ JavaScript development</p>
           </div>
 
           <div class="skill-card">
@@ -103,7 +105,6 @@
               <i class="fab fa-node-js"></i>
             </div>
             <h3 class="skill-name">Next.js</h3>
-            <p>Server-side rendering and static site generation</p>
           </div>
 
           <div class="skill-card">
@@ -111,7 +112,6 @@
               <i class="fas fa-database"></i>
             </div>
             <h3 class="skill-name">Prisma</h3>
-            <p>Type-safe database access with Prisma ORM</p>
           </div>
 
           <div class="skill-card">
@@ -119,7 +119,6 @@
               <i class="fab fa-css3-alt"></i>
             </div>
             <h3 class="skill-name">Tailwind CSS</h3>
-            <p>Utility-first CSS framework</p>
           </div>
 
           <div class="skill-card">
@@ -127,7 +126,6 @@
               <i class="fab fa-html5"></i>
             </div>
             <h3 class="skill-name">HTML/CSS</h3>
-            <p>Responsive layouts and modern CSS features</p>
           </div>
         </div>
       </div>
@@ -137,7 +135,7 @@
     <section class="section" style="background-color: var(--bg-alt)">
       <div class="container">
         <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-grid">
+                <div class="projects-grid">
           <!-- Project 1 -->
           <div class="project-card">
             <div class="project-image">
@@ -150,11 +148,6 @@
               <h3 class="project-title">
                 Multi-Branch CSV Transaction Processor
               </h3>
-              <p class="project-description">
-                A custom-built financial tool for Beyza Mobilya that processes
-                monthly FIB bank income transactions from CSV files and
-                generates comprehensive PDF reports.
-              </p>
               <div class="project-technologies">
                 <span class="project-technology">Next.js</span>
                 <span class="project-technology">React</span>
@@ -182,11 +175,6 @@
             </div>
             <div class="project-content">
               <h3 class="project-title">Beyza Mobilya Website</h3>
-              <p class="project-description">
-                Complete corporate website for Beyza Mobilya featuring their
-                product catalog, company information, and contact details with a
-                modern responsive design.
-              </p>
               <div class="project-technologies">
                 <span class="project-technology">Next.js</span>
                 <span class="project-technology">React</span>
@@ -214,11 +202,6 @@
             </div>
             <div class="project-content">
               <h3 class="project-title">QIU Student Discounts Portal</h3>
-              <p class="project-description">
-                A platform for Qaiwan International University students to
-                discover and access exclusive student discounts at local
-                businesses and services.
-              </p>
               <div class="project-technologies">
                 <span class="project-technology">Next.js</span>
                 <span class="project-technology">Prisma</span>
@@ -235,27 +218,19 @@
               </div>
             </div>
           </div>
+
           <!-- Project 6: Khafaf Exchange -->
           <div class="project-card">
             <div class="project-image">
               <img
                 src="assets/images/project6.png"
                 alt="Khafaf Exchange Rates"
-                width="400"
-                height="250"
+                width="400" height="250"
                 decoding="async"
               />
             </div>
             <div class="project-content">
-              <h3 class="project-title" style="color: var(--text-dark)">
-                Khafaf Exchange Rates
-              </h3>
-              <p class="project-description">
-                A web application for Khafaf Exchange to monitor and share
-                up-to-date local currency exchange rates. Used internally by
-                staff and publicly by customers to check the latest market
-                rates.
-              </p>
+              <h3 class="project-title" style="color: var(--text-dark);">Khafaf Exchange Rates</h3>
               <div class="project-technologies">
                 <span class="project-technology">Next.js</span>
                 <span class="project-technology">React</span>
@@ -273,6 +248,69 @@
               </div>
             </div>
           </div>
+
+          <!-- Project 7: Archcool E-commerce -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="assets/images/project7.png"
+                alt="Archcool E-commerce Store"
+                width="400" height="250"
+                decoding="async"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title" style="color: var(--text-dark);">Archcool E-commerce Store</h3>
+              <div class="project-technologies">
+                <span class="project-technology">Next.js</span>
+                <span class="project-technology">React</span>
+                <span class="project-technology">Tailwind CSS</span>
+                <span class="project-technology">ShadcnUI</span>
+                <span class="project-technology">Stripe</span>
+                <span class="project-technology">UploadThing</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://archcoolstore.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                  >View Live</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 8: Anjo Home -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="assets/images/project8.png"
+                alt="Anjo Home Furniture Website"
+                width="400" height="250"
+                decoding="async"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title" style="color: var(--text-dark);">Anjo Home Furniture</h3>
+              <div class="project-technologies">
+                <span class="project-technology">Next.js</span>
+                <span class="project-technology">React</span>
+                <span class="project-technology">Tailwind CSS</span>
+                <span class="project-technology">Responsive Design</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://www.anjo-home.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                  >View Live</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
         </div>
         <div style="text-align: center; margin-top: var(--space-md)">
           <a href="projects.html" class="btn">View All Projects</a>
